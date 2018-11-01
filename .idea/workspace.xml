@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22579429-ec8a-4002-ada5-6d8dd5266393" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stores/com/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stores/com/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stores/com/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stores/com/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stores/com/DroneApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stores/com/DroneApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/stores/com/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stores/com/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stores/com/OrderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stores/com/OrderFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/stores/com/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stores/com/Scheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stores/com/DroneAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stores/com/DroneAppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/Bike.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/VehicleFactoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/VehicleFactoryApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/VehicleFactoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-mvc/src/main/java/com/baeldung/annotations/VehicleFactoryConfig.java" afterDir="false" />
@@ -52,13 +49,14 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="java" value="14540" />
+          <entry key="txt" value="2139" />
           <entry key="xml" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="14540" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="2144" />
           <entry key="XML" value="68" />
         </counts>
       </usages-collector>
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
-              <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
             </state>
           </provider>
         </entry>
@@ -90,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stores/com/OrderFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1539">
-              <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
+            <state relative-caret-position="164">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,9 +115,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -245,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/main/java/stores/com/Scheduler.java" />
         <option value="$PROJECT_DIR$/src/main/java/stores/com/Order.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -262,8 +265,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1537" />
-    <option name="y" value="35" />
+    <option name="x" value="135" />
+    <option name="y" value="52" />
     <option name="width" value="1400" />
     <option name="height" value="922" />
   </component>
@@ -317,7 +320,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541088097243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541095850477" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.1.0" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -430,7 +433,7 @@
       <option name="presentableId" value="Default" />
       <updated>1540726709859</updated>
       <workItem from="1540726713941" duration="95721000" />
-      <workItem from="1541031583778" duration="5608000" />
+      <workItem from="1541031583778" duration="7566000" />
     </task>
     <servers />
   </component>
@@ -467,13 +470,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101329000" />
+    <option name="totallyTimeSpent" value="103287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1537" y="35" width="1400" height="922" extended-state="0" />
+    <frame x="135" y="52" width="1400" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -483,8 +486,8 @@
       <window_info anchor="bottom" id="PMD" weight="0.32961586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28376704" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31226766" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28376704" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.31226766" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -796,9 +799,6 @@
         <state relative-caret-position="-1461" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stores/com/Scheduler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -811,16 +811,6 @@
             <element signature="e#11043#11044#0" expanded="true" />
             <element signature="e#11088#11089#0" expanded="true" />
             <element signature="e#11124#11125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stores/com/OrderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,7 +840,24 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
-          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stores/com/OrderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
         </state>
       </provider>
     </entry>
