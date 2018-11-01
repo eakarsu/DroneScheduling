@@ -206,9 +206,10 @@ public class Scheduler {
         //Search order whose expected completion time does not pass actual deadline
         //and  does not pass drop stop working time
         Optional<Order> nextOrder = batchOrders.stream().filter(o -> {
-                    LocalDateTime delTime = baseTime.plusMinutes(o.getElapsedTime());
+                    int elapsedTime = o.getElapsedTime();
+                    LocalDateTime delTime = baseTime.plusMinutes(elapsedTime);
                     return (delTime.isBefore(o.getDeadlineTime()) &&
-                            delTime.isBefore(endTime));
+                            delTime.plusMinutes(elapsedTime).isBefore(endTime)); //Drone makes round trip
                 }
         )
                 .min(Comparator.comparing(Order::getElapsedTime));
