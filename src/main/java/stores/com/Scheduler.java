@@ -98,6 +98,9 @@ public class Scheduler {
         return curTime;
     }
 
+    /**
+     *
+     */
     public void sweepingScheduler() {
         LocalDateTime now = LocalDateTime.now();
         ArrayList<Order> eliminatedOrders = new ArrayList<>();
@@ -131,6 +134,15 @@ public class Scheduler {
     }
 
 
+    /**
+     *
+     * @param ndrones
+     * @param queue
+     * @param eliminatedOrders
+     * @param curTimes
+     * @param endTime
+     * @return
+     */
     public boolean processMultipleOrders (int ndrones,
                                                     PriorityBlockingQueue<Order> queue,
                                                     ArrayList<Order> eliminatedOrders,
@@ -158,6 +170,14 @@ public class Scheduler {
         return isOneProcessed;
     }
 
+    /**
+     *
+     * @param ndrones
+     * @param queue
+     * @param eliminatedOrders
+     * @param curTimes
+     * @param endTime
+     */
     public void eliminateOrdersWithMultipleDrones (int ndrones,
                                           PriorityBlockingQueue<Order> queue,
                                           ArrayList<Order> eliminatedOrders,
@@ -256,6 +276,9 @@ public class Scheduler {
         printNPS();
     }
 
+    /**
+     *
+     */
     public void printNPS() {
         int totalOrders = orders.length;
         //calculate promoters or detractors

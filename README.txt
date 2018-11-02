@@ -23,7 +23,7 @@ end time (the drone can work until  10PM) is not passed. It will select minimum 
 could not find such an order, then the drone increase time and try to find next order.
 It will iterate this until queue empty
 
-Based on my experiments, I was not able to get good numbers  for mor ethan 100 orders.
+Based on my experiments, I was not able to get good numbers  for more than 100 orders.
 Therefore, I have enhanced with multi-drone delivery. I have obtained good speedup. Basically,
 it is similar algorithm but with multiple drones. It is simulation and not multi-threaded.
 
