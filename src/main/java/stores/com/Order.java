@@ -17,6 +17,7 @@ public class Order implements Comparable<Order>, Serializable {
     LocalDateTime departTime;
     LocalDateTime deliveryTime;
     LocalDateTime deadlineTime;
+    LocalDateTime neutralDeadlineTime;
     int x;
     int y;
     String xLabel;
@@ -28,6 +29,7 @@ public class Order implements Comparable<Order>, Serializable {
     boolean visited;
     double penalty;
 
+
     public Order(int orderIndex) {
         this.orderIndex = orderIndex;
         this.label = String.format("WM%03d", orderIndex);
@@ -37,6 +39,7 @@ public class Order implements Comparable<Order>, Serializable {
         this.orderIndex = Integer.parseInt(orderIndex);
         this.label = String.format("WM%s", orderIndex);
     }
+
 
     /**
      * @param other
@@ -106,7 +109,9 @@ public class Order implements Comparable<Order>, Serializable {
     }
 
     public void setOrderTime(LocalDateTime orderTime) {
+
         this.orderTime = orderTime;
+        neutralDeadlineTime = orderTime.plusHours(3);
     }
 
     public void setOrderTime(String orderTimeStr) {
@@ -176,7 +181,7 @@ public class Order implements Comparable<Order>, Serializable {
         if (deliveryTime != null) {
             return deliveryTime.isAfter(orderTime.plusHours(3));
         }
-        return false;
+        return true;
     }
 
     public boolean isNeutral() {

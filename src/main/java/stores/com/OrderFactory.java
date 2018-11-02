@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -85,7 +86,8 @@ public class OrderFactory {
 
         long cnt = Arrays.stream(orders).filter(o -> o.getDepartTime() == null).count();
 
-        Arrays.stream(orders).forEach(o -> {
+        Arrays.stream(orders).filter(o->o.getDepartTime() != null).
+                sorted(Comparator.comparing(Order::getOrderTime)).forEach(o -> {
             try {
                 LocalDateTime ldt = o.getDepartTime();
                 LocalTime departTime = LocalTime.of(ldt.getHour(), ldt.getMinute(), ldt.getSecond());

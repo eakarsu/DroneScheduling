@@ -79,6 +79,13 @@ public class Scheduler {
         }
     }
 
+    /**
+     *
+     * @param nextOrder
+     * @param endTime
+     * @param curTime
+     * @return
+     */
     public LocalDateTime eliminateOneOrder (Order nextOrder,
                                     LocalDateTime endTime,
                                     LocalDateTime curTime)
@@ -87,11 +94,6 @@ public class Scheduler {
         //Process order if drone can finish it by end time
         if (curTime.plusMinutes(elapsedTime).isBefore(endTime)) {
             curTime = processOrder(nextOrder, curTime);
-        }else {
-            //Set time 00:00:00 for un-processed orders.
-            LocalDateTime ldt = endTime.plusHours(24 - OrderFactory.END_TIME);
-            nextOrder.setDepartTime(ldt);
-            nextOrder.setDeliveryTime(ldt);
         }
         return curTime;
     }
@@ -203,7 +205,7 @@ public class Scheduler {
 
         final LocalDateTime baseTime = curTime;
         //Search order whose expected completion time does not pass actual deadline
-        //and  does not pass drop stop working time
+        //and  does not pass drone stop working time
         Optional<Order> nextOrder = batchOrders.stream().filter(o -> {
                     int elapsedTime = o.getElapsedTime();
                     LocalDateTime delTime = baseTime.plusMinutes(elapsedTime);
